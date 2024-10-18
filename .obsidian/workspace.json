@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "11d36f04f90a3cc0",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c724f558e4fe7eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c413d371d78305a2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "644254697fee6d45",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a8b992493d050ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad4af602767f1c83",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "dd994821920c5402",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "60169489e6d03f7d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a047a61368b12e4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "52b4d8b8fa9d8dd7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "685547e1f9df0e7d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "d6fb0446506f9ce8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "692268b756cfd6a3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "515fe27cbbd348b3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "c413d371d78305a2",
+  "lastOpenFiles": [
+    "in/integrate chatgpt into nvim.md",
+    "Adapter Pattern.md",
+    "in/add git and syncthing to obsidian notes",
+    "projects/rdrive - create password change to rdrive",
+    "projects/rdrive - add video player to FE",
+    "projects/rdrive - add cloudfront dist infront of api gateway with geolocation",
+    "projects/rdrive - add backwards nav to image preview",
+    "projects/rdrive - write cicd pipeline",
+    "projects/rdrive - turn into mono repo",
+    "projects/rdrive - write article",
+    "in/research ocr",
+    "in/add tmux?",
+    "Xerris-react-component Library notes.md",
+    "CircleCi.md",
+    "CICD Examples.md",
+    "C++ Vectors & Strings.md",
+    "C++ File I-O.md",
+    "API Gateway.md",
+    "Automatic Memory Allocation & Activation Record.md",
+    "AWS CICD.md",
+    "AWS Cloud Overview - Regions & Availability Zones(AZ).md",
+    "AWS Other Services.md",
+    "AWS Shared Responsibility.md",
+    "Block Storage- EBS.md",
+    "Auto Scaling.md",
+    "Arrays in C.md",
+    "Kinesis.md",
+    "Bridge Pattern - Usage.md",
+    "Notion/Software Wiki.md",
+    "Decorator Pattern.md",
+    "Singleton Pattern.md",
+    "Testing-Library.md",
+    "Strategy Pattern.md",
+    "Vite.md",
+    "Notion/Software Wiki/WIKI/EarnNLearn/Kanban - EarnNLearn/Add Zod Schema Validation.md",
+    "Notion/Software Wiki/WIKI/EarnNLearn/Kanban - EarnNLearn/BUG - date picker form validation in CreateChore.md",
+    "Untitled 1 57.png",
+    "Untitled 81.png",
+    "Untitled 2 44.png",
+    "Untitled 1 56.png",
+    "Untitled 80.png",
+    "Untitled 1 55.png",
+    "Untitled 79.png",
+    "Untitled 78.png",
+    "Untitled 1 54.png",
+    "Untitled 77.png"
+  ]
+}
