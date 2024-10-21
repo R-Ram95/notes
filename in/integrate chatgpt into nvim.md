@@ -1,2 +1,0 @@
-- look at costs for using the api key
-- investigate how I can store the api securely locally

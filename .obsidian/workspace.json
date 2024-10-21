@@ -152,11 +152,14 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-importer:Open Importer": false
+      "obsidian-importer:Open Importer": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "c413d371d78305a2",
   "lastOpenFiles": [
+    "in/add lsp for html and css tailwindcss to nvim.md",
+    "test.md",
     "in/integrate chatgpt into nvim.md",
     "Adapter Pattern.md",
     "in/add git and syncthing to obsidian notes",
@@ -191,8 +194,6 @@
     "Testing-Library.md",
     "Strategy Pattern.md",
     "Vite.md",
-    "Notion/Software Wiki/WIKI/EarnNLearn/Kanban - EarnNLearn/Add Zod Schema Validation.md",
-    "Notion/Software Wiki/WIKI/EarnNLearn/Kanban - EarnNLearn/BUG - date picker form validation in CreateChore.md",
     "Untitled 1 57.png",
     "Untitled 81.png",
     "Untitled 2 44.png",
