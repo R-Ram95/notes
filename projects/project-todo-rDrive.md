@@ -1,8 +1,0 @@
-- write article
-- add backwards nav to image preview
-- add cloudfront dist infront of api gateway with geolocation
-- add video player to FE
-- create password change to rdrive
-- turn into mono repo
-- write cicd pipeline
-- make a dashboard for the resources i have for rDrive
