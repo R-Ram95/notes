@@ -1,4 +1,6 @@
 ---
+id: API Gateway
+aliases: []
 tags:
   - AWS
   - DevOps
@@ -71,7 +73,6 @@ HTTP_PROXY
 - filter the response
 - e.g. can be used as “middle man” to convert a REST API to a SOAP API if the backend requires a SOAP API
 
-![[/Untitled 9.png|Untitled 9.png]]
 
   
 
@@ -163,7 +164,6 @@ CloudWatch Metrics:
     - Authorization: IAM Policy
 - best way to protect API Gateway for services within API Gateway
 
-![[/Untitled 1 2.png|Untitled 1 2.png]]
 
 ## Resource Policies
 
@@ -177,8 +177,6 @@ CloudWatch Metrics:
 - Authentication: Cognito User Pools
 - Authorization: API Gateway Methods
     
-    ![[/Untitled 2 3.png|Untitled 2 3.png]]
-    
 
   
 
@@ -190,7 +188,6 @@ CloudWatch Metrics:
 - Authentication: External
 - Authorization: Lambda
 
-![[/Untitled 3 3.png|Untitled 3 3.png]]
 
 # Summary
 
@@ -229,7 +226,6 @@ Cognito User Pool:
 
 ## Connection to API
 
-![[/Untitled 4 2.png|Untitled 4 2.png]]
 
 - websocket URL: wss://[some-uniqueid].execute-api.[region].amazonaws.com/[stage-name]
 - client connects
@@ -237,7 +233,5 @@ Cognito User Pool:
 - connectionid persisted in Dynam0DB
 
 ## Routing
-
-![[/Untitled 5 2.png|Untitled 5 2.png]]
 
 - routeselection expression tells you which backend to route to

@@ -1,11 +1,11 @@
 ---
+id: Data Analytics Pipelines
+aliases: []
 tags:
   - AWS
   - Data-Analytics
 ---
 This is a high-level example of a Data Analytics Pipeline:
-
-![[/Untitled 30.png|Untitled 30.png]]
 
 Step 1: Data Ingestion
 

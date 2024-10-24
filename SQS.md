@@ -1,3 +1,9 @@
+---
+id: SQS
+aliases: []
+tags: []
+---
+
 - use to decouple applications
 
 Producer - Send messages to the Queue
@@ -107,7 +113,6 @@ Public S3 events to SQS Queue
 
 ## Extended Clients
 
-![[/Untitled 4 25.png|Untitled 4 25.png]]
 
 - Java library
 - allows us to “send” messages larger than 256KB
@@ -137,11 +142,6 @@ ChangeMessageVisibility ⇒ change message timeout
 
 * Batch APIs for SendMessage, DeleteMessage, ChangeMessageVisibility
 
-  
-
-  
-
-  
 
 # FIFO Queues
 
