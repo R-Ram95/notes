@@ -1,0 +1,5 @@
+---
+id: note
+aliases: []
+tags: []
+---

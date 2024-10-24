@@ -1,7 +1,8 @@
 ---
-id: note
+id: todo
 aliases: []
 tags: []
 ---
 
+ - [ ] research OCR
 
