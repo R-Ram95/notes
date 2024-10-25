@@ -1,9 +1,3 @@
----
-id: todo
-aliases:
-  - todo
-tags: []
----
 
 - [ ] apply for Avenue living job on LinkedIn
 - [ ] write an "elevator pitch" about yourself
@@ -21,5 +15,5 @@ tags: []
 
 https://arrivein.com/career-ca/15-tips-to-tap-into-canadas-hidden-job-market/
 
-# todo
+[[todos]]
 

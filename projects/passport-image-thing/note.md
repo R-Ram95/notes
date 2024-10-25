@@ -1,7 +1,2 @@
----
-id: note
-aliases: []
-tags: []
----
 
 

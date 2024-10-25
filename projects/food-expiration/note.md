@@ -1,8 +1,3 @@
----
-id: note
-aliases: []
-tags: []
----
 
 Products in circleK probably use a linear, 1D barcode. The UPC type. I am
 assuming that the barcodes correlate to a key which is lookedup in CircleK's POS

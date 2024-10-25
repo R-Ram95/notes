@@ -1,8 +1,3 @@
----
-id: note
-aliases: []
-tags: []
----
 
 Adding zettelkasten system:
 Literature Notes = comments to text you are reading

@@ -1,11 +1,3 @@
----
-id: job-searching
-aliases: []
-tags: []
----
-
-
-
 
 ### Really awsome cover letter I wrote for Sensor Tower
 
