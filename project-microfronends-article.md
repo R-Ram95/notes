@@ -355,7 +355,7 @@ const Button = () => {
       "Click me: ",
       count
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "./react-icon.png", alt: "" })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "./react-icon.png", alt: "" }).png
   ] });
 };
 

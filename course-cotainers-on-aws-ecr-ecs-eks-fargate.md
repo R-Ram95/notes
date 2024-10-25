@@ -143,7 +143,7 @@ how to share data between ECS tasks?
 
 ECS services needs to determine where to place/remove a task based on CPU, memory and available ports when task are added or removed
 
-- need to define a task placement strategy and task placement constraints
+- [ ] need to define a task placement strategy and task placement constraints
 - only works for EC2 Launch Type b.c. Fargate is managed and takes care of this
 
 Steps ⇒ identify instances that satisfy:
