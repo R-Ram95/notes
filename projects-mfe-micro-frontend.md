@@ -1,9 +1,8 @@
 
 - **Nutrien HomeSafe Code Review**> [!important]  
-    > orchestrator Approot-config.tsregisters applications and passes custom props to each applicationchannel - used for communication between MFEs using Postal isSidebarOpen - boolean to check if the side bar is openauthenticatedFetch: authenticatedFetchWithGroupId isAuthenticated - not sure what this is for, it is always set to trueauthConfig - used by sidebar and dashboard repos in the auth.ts file where a bunch of authentication methods are definedsetAggregateGroupId - not used anywhere but defined in orchestrator, not sure why it is passed to all appsgetAggregateGroupId - used only in the orchestrator app, not sure why it is passed to all appsgetAllUserPermissions - used only in the orchestrator app, not sure why it is passed to all appssetUserPermissions - used only in the orchestrator app, not sure why it is passed to all appsuserHasPermission - used in sidebar app to see if user is allowed to navigate to a route  
+    orchestrator Approot-config.tsregisters applications and passes custom props to each applicationchannel - used for communication between MFEs using Postal isSidebarOpen - boolean to check if the side bar is openauthenticatedFetch: authenticatedFetchWithGroupId isAuthenticated - not sure what this is for, it is always set to trueauthConfig - used by sidebar and dashboard repos in the auth.ts file where a bunch of authentication methods are definedsetAggregateGroupId - not used anywhere but defined in orchestrator, not sure why it is passed to all appsgetAggregateGroupId - used only in the orchestrator app, not sure why it is passed to all appsgetAllUserPermissions - used only in the orchestrator app, not sure why it is passed to all appssetUserPermissions - used only in the orchestrator app, not sure why it is passed to all appsuserHasPermission - used in sidebar app to see if user is allowed to navigate to a route  
       
-    > [!important]  
-    > How does messaging between MFEs work?using a JS88 library called Postalit is a pub/sub type of messaging but has a request/response type extension’https://github.com/postaljs/postal.jsroot-config.ts - orchestrator repo// Orchestrator: root-config.ts  
+    How does messaging between MFEs work?using a JS88 library called Postalit is a pub/sub type of messaging but has a request/response type extension’https://github.com/postaljs/postal.jsroot-config.ts - orchestrator repo// Orchestrator: root-config.ts  
     // create the channel for communication  
     const channel = postal.channel("main");  
     let sidebarOpen = false;  
@@ -43,8 +42,7 @@
     }  
     );  
       
-    > [!important]  
-    > How are API Calls made?All api calls are made through the orchestratorthe root-config.ts of the orchestrator defines the authenticatedFetch functionadds things needed for request (endpoint url, headers, etc.) this function is passed to the applications using CustomProps (passed to each application during the lifecycle methods) of the single-spa registerApplication() methodactual api calls are made using methods defined in the @nutrien/cxp-api-fetch-module packageauthenticatedFetch// adds  
+    How are API Calls made?All api calls are made through the orchestratorthe root-config.ts of the orchestrator defines the authenticatedFetch functionadds things needed for request (endpoint url, headers, etc.) this function is passed to the applications using CustomProps (passed to each application during the lifecycle methods) of the single-spa registerApplication() methodactual api calls are made using methods defined in the @nutrien/cxp-api-fetch-module packageauthenticatedFetch// adds  
     const authenticatedFetchWithGroupId = (  
     input: RequestInfo,  
     init?: RequestInit | undefined,  

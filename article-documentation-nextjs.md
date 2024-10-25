@@ -1,5 +1,7 @@
 # What is Next.js?
 
+[[this-is-a-new-note]]
+
 - React framework for production
 - full stack framework for React
 - Gives a clear guide on how to structure files and write code
