@@ -78,7 +78,6 @@ Filters can be used to trigger CloudWatch Alarms
 
 - filter you add ontop of cloudwatch logs
 
-![[/Untitled 53.png|Untitled 53.png]]
 
 # Alarms
 

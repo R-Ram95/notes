@@ -14,7 +14,6 @@ Architectural approach for a centralized enterprise data repository stored on Am
 
 A fully managed ETL service. Customers point glue to data stored in a data lake and other data stores where Glue discovers the data and stored metadata such as table definitions and schemas in the Glue catalog.
 
-![[/Untitled 2 19.png|Untitled 2 19.png]]
 
 ## Glue Data Catalog - central “map” of data
 
@@ -33,7 +32,6 @@ Automatically build and sync a customers Data Catalog. It scans data sources suc
 
 ## Example with Athena
 
-![[/Untitled 3 19.png|Untitled 3 19.png]]
 
 - streaming data ingested into first S3
 - Glue crawler inspects the data in the first S3 and performans extraction, transforms, creates partitions and loads this data into the second S3
@@ -48,7 +46,6 @@ Automatically build and sync a customers Data Catalog. It scans data sources suc
 
 An interactive query service to analyze data in S3 using ANSI SQL.
 
-![[/Untitled 4 13.png|Untitled 4 13.png]]
 
   
 
@@ -65,12 +62,9 @@ An interactive query service to analyze data in S3 using ANSI SQL.
 
   
 
-![[/Untitled 5 11.png|Untitled 5 11.png]]
 
 - It can take months for a customer to set up a Data Lake on prem
 
   
 
 AWS Lake Formation simplifies the process of building secure data lakes and automates steps
-
-![[/Untitled 6 8.png|Untitled 6 8.png]]

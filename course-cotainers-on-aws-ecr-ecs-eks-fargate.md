@@ -20,7 +20,6 @@ Service ⇒ points to Cluster ⇒ Cluster ⇒ points to Task Definition
 
 ## EC2 Launch Type
 
-![[/Untitled 18.png|Untitled 18.png]]
 
 - Launch ECS Tasks on ECS Clusters
 - Must provision and maintain the infrastructure (EC2 Instances)
@@ -28,9 +27,6 @@ Service ⇒ points to Cluster ⇒ Cluster ⇒ points to Task Definition
 
 ## Fargate Launch Type
 
-![[/Untitled 1 10.png|Untitled 1 10.png]]
-
-- launch Docker container on AWS
 - no need to provision infrastructure, Fargate does this for you
 - all serverless
 - just create task definitions
@@ -39,7 +35,6 @@ Service ⇒ points to Cluster ⇒ Cluster ⇒ points to Task Definition
 
 ## ECS IAM Roles
 
-![[/Untitled 2 10.png|Untitled 2 10.png]]
 
 ### EC2 Instance Profile (EC2 Launch type only)
 
@@ -95,8 +90,6 @@ Service ⇒ points to Cluster ⇒ Cluster ⇒ points to Task Definition
     - IAM Roles
     - Logging configuration
     
-    ![[/Untitled 3 10.png|Untitled 3 10.png]]
-    
     - connect container port (80) to EC2 (host) port (8080) to give container access to the internet
 
 ### Load Balancing (EC2 Launch Type)
@@ -105,7 +98,6 @@ Service ⇒ points to Cluster ⇒ Cluster ⇒ points to Task Definition
 - the ALB finds the right port on EC2 instance
 - EC2 instance security groups must allow any traffic from the ALB
 
-![[/Untitled 4 7.png|Untitled 4 7.png]]
 
   
 
@@ -115,8 +107,6 @@ Service ⇒ points to Cluster ⇒ Cluster ⇒ points to Task Definition
 - each ECS task gets private IP
 - ECS ENI Security Group ⇒ allow port 80 from ALB
 - ALB Security Group ⇒ allow port 80/443 from web
-    
-    ![[/Untitled 5 7.png|Untitled 5 7.png]]
     
 
 ### IAM Roles in ECS
@@ -140,7 +130,6 @@ how to share data between ECS tasks?
 
 - we mount data volumes on the containers that need to share data ⇒ works for both EC2 and Fargate tasks
 
-![[/Untitled 6 6.png|Untitled 6 6.png]]
 
 - application container writes to bind mount
 - metrics and logs container reads from the bind mount
@@ -233,9 +222,7 @@ The Elastic Container Registry stores and manages Docker Images on AWS.
 
 Must assign IAM role to EC2 instances to allow it to pull Docker Images from the ECR repository:
 
-![[/Untitled 7 4.png|Untitled 7 4.png]]
-
-  
+ 
 
 ## Fargate Launch Type
 

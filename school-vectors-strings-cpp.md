@@ -5,7 +5,6 @@
 - part of the Standard Template Library:
     - \#include<vector>
 
-![[/Untitled 34.png|Untitled 34.png]]
 
 ## Properties
 
@@ -145,14 +144,12 @@ vector<int> copy(a);
         
 - the result:
     
-    ![[/Untitled 1 21.png|Untitled 1 21.png]]
     
 
 ### Element Access
 
 - using .at is better than [] notation
 
-![[/Untitled 2 17.png|Untitled 2 17.png]]
 
 - in code:
     
@@ -248,9 +245,7 @@ vector<int> copy(a);
     
     - in memory
         
-        ![[/Untitled 3 17.png|Untitled 3 17.png]]
         
-        ![[/Untitled 4 12.png|Untitled 4 12.png]]
         
 
 ## Methods

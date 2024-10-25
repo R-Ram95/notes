@@ -3,7 +3,6 @@
 
 Amazon S3 provided object level storage. S3 stores objects in a flat, non-hierarchal structure, and objects are stored in resources called buckets. S3 supports parallel requests so it can scale by the factor of your compute. S3 supports 3500 add requests/s and 5500 retrieve requests.
 
-![[/Untitled 59.png|Untitled 59.png]]
 
 **Buckets**
 
@@ -142,7 +141,6 @@ NOTES:
 
 ## 3.2 Moving Between Storage Classes
 
-![[/Untitled 1 40.png|Untitled 1 40.png]]
 
 - infrequently accessed - **Standard-IA**
 - for archived objects that you DONT need fast access to - **Glacier or Glacier Deep Archive**
@@ -167,9 +165,7 @@ Storage class analysis helps to analyze acces patterns to help you when to trans
 
 This is where you create users to manage their access permissions. Specifies which API calls should be allowed for a specific user from IAM. NOTE: an IAM principal can access S3 object if: the user IAM permissions allow it OR the resource policy allows it AND there are no DENY
 
-![[/Untitled 2 31.png|Untitled 2 31.png]]
 
-![[/Untitled 3 30.png|Untitled 3 30.png]]
 
 ### 5.1.2 Access Control List
 
@@ -179,11 +175,11 @@ This is where individual objects accesible to authorized users
 
 The are bucket wide rules from the S3 console.
 
-![[/Untitled 4 21.png|Untitled 4 21.png]]
+
 
 Policy Structure:
 
-![[/Untitled 5 15.png|Untitled 5 15.png]]
+
 
 Resources: buckets and objects
 
@@ -195,7 +191,7 @@ Principal: the account or user to apply policy to
 
 ### 5.1.4 Access Points
 
-![[/Untitled 6 12.png|Untitled 6 12.png]]
+
 
 - create layer on-top of S3 bucket and attach policies that grant r/w access to a specific prefix
 - simplifies bucket policies ⇒ one policy per access point
@@ -241,7 +237,7 @@ Client-side Encryption (CSE)
 
 ### 5.3.1 SSE-S3
 
-![[/Untitled 7 8.png|Untitled 7 8.png]]
+
 
 - encrypted server-side
 - type: AES-256
@@ -249,7 +245,6 @@ Client-side Encryption (CSE)
 
 ### 5.3.2 SSE-KMS
 
-![[/Untitled 8 7.png|Untitled 8 7.png]]
 
 - manage our own keys using KMS
 - advantages: user control, audit key using CloudTrail
@@ -257,7 +252,7 @@ Client-side Encryption (CSE)
 - header: **`"x-amz-server-side-encryption": "aws:kms"`**
 - limitations: need to make API calls (GenerateDataKey) using KMS API for each data upload ⇒ might reach throttling limit based on # of requests
     
-    ![[/Untitled 9 5.png|Untitled 9 5.png]]
+
     
 
 ### 5.3.3 SSE-C
@@ -266,7 +261,7 @@ Client-side Encryption (CSE)
 - key must be sent to AWS
 - must use HTTPS and key is provided in the HTTP header for every request
     
-    ![[/Untitled 10 2.png|Untitled 10 2.png]]
+
     
 
 ## 5.4 Block Public Access
@@ -290,7 +285,7 @@ Used to discover and protect senstive data stored in S3.
 - use AWS Lambda Functions to change the object before it is retrieved by the caller application
 - Only one S3 bucket is needed ⇒ create S3 AP ontop of S3 bucket and an S3 object AP to access the lambda
 
-![[/Untitled 11 2.png|Untitled 11 2.png]]
+
 
 ## 6.2 Query in place
 
@@ -334,7 +329,7 @@ Multi-part upload:
 
 - parallelize upload ⇒ decrease time to upload
     
-    ![[/Untitled 12 2.png|Untitled 12 2.png]]
+ 
     
 
 S3 Transfer Acceleration:
@@ -342,21 +337,20 @@ S3 Transfer Acceleration:
 - transfer file to AWS Edge Location
 - forward data to target region
     
-    ![[/Untitled 13 2.png|Untitled 13 2.png]]
+   
     
 
 Parallelize GET:
 
 - request specific byte ranges
     
-    ![[/Untitled 14 2.png|Untitled 14 2.png]]
+   
     
 
 Retrieve only partial Data:
 
 e.g. head of a file
 
-![[/Untitled 15 2.png|Untitled 15 2.png]]
 
   
 
@@ -377,4 +371,4 @@ e.g. head of a file
 - request not fulfilled if other origin does not allow requests
 - must enable cross origin requests
 
-![[/Untitled 16 2.png|Untitled 16 2.png]]
+

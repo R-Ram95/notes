@@ -12,7 +12,6 @@
 
 API Gateway and ALB
 
-![[/Untitled 64.png|Untitled 64.png]]
 
 # Cognito Identity Pools (Federated Identities)
 
@@ -26,9 +25,6 @@ API Gateway and ALB
     - developer authenticated identities
     - allows for guest policies
 
-![[/Untitled 1 44.png|Untitled 1 44.png]]
-
-![[/Untitled 2 35.png|Untitled 2 35.png]]
 
 # User Pools vs. Identity Pools
 

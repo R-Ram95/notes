@@ -1,9 +1,3 @@
----
-tags:
-  - AWS
-  - DevOps
-  - Serverless
----
 - executes many small tasks in a workflow
 - e.g. talk to API, execute Lambda
 - Choice State: test for condition to send to a branch
@@ -33,7 +27,6 @@ tags:
 - Real time WebSocket or MQTT
 - for mobile apps: local data access & data sync
 
-![[/Untitled 35.png|Untitled 35.png]]
 
 ## Security
 

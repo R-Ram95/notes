@@ -46,17 +46,13 @@
 - Two forms: Static Generation and Server-Side-Rendering
     - **Static Generation** - HTML is generated at **build time** and reused at each request
         
-        ![[/Untitled 3.png|Untitled 3.png]]
         
     - **Server-side Rendering** **- HTML generated at each request**
         
-        ![[Untitled 1.png]]
         
 - You can choose which type of pre-rendering you use for **each page**
     
-    ![[/Untitled 2 2.png|Untitled 2 2.png]]
     
-    ![[/Untitled 3 2.png|Untitled 3 2.png]]
     
 
   
@@ -136,13 +132,11 @@ export async function getStaticPaths() {
 - statically generate parts of page that do not require external data
 - when page loads, fetch external data on the client side using JS
     
-    ![[Untitled 4.png]]
     
 - works well for user dash boards ⇒ private, user-specific page and SEO is not relevant
 
 ## Dynamic Routes
 
-![[Untitled 5.png]]
 
   
 
@@ -155,7 +149,6 @@ NextJS has built-in routing in the form of file-based routing, i.e. routing is o
 - main folder is the pages directory ⇒ any file in the pages directory becomes a route
 - files named `index` are routed to the root of the directory
 
-![[Untitled 6.png]]
 
 - corresponds to `/profile`
 
@@ -163,12 +156,9 @@ Nested routes
 
 - corresponds to `/users/user1` & `/users/users2`
     
-    ![[Untitled 7.png]]
     
 
 Dynamic routes ⇒ `/pages/[slug].js`
-
-![[Untitled 8.png]]
 
 - corresponds to `/product/product1`, `/product/product2`, etc.
 - the `slug` part is dynamic and will render the productid page based on the route

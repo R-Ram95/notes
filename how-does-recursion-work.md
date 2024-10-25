@@ -23,7 +23,6 @@
         countdown(5);    // This is the initial call to the function.
         ```
         
-        ![[/Untitled 25.png|Untitled 25.png]]
         
 
 The Call Stack
@@ -47,8 +46,3 @@ The Call Stack
     
     - each call to `fact` has its own version of `x`
     
-    ![[/Untitled 1 14.png|Untitled 1 14.png]]
-    
-    ![[/Untitled 2 13.png|Untitled 2 13.png]]
-    
-    ![[/Untitled 3 13.png|Untitled 3 13.png]]

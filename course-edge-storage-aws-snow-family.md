@@ -73,10 +73,8 @@ A large truck to migrate exabyte-scale datasets into and out of AWS cloud.
 
 **Export from S3** - Export data from S3 into your device, AWS then ships the device to you.
 
-![[/Untitled 39.png|Untitled 39.png]]
 
 # 5. Relationship between device and Job type
 
 Features of Snowball and Snowcone vary based on the device and job type.
 
-![[/Untitled 1 25.png|Untitled 1 25.png]]

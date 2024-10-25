@@ -12,7 +12,6 @@ tags:
 
 # Flow
 
-![[/Untitled 31.png|Untitled 31.png]]
 
 1) Client redirects `onClick` to GitHub auth page with url params
 
@@ -22,8 +21,6 @@ tags:
 - `redirectUri` - Where user is sent back to after authorization
 
 2) Github prompts user to authorize
-
-![[/Untitled 1 18.png|Untitled 1 18.png]]
 
 3) Github redirects back to `redirecturi` with optional `state` and `code`
 

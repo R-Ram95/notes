@@ -12,9 +12,7 @@ Elasticache is a fully managed Redis and Memached distributed memorcy cache in t
 
   
 
-![[/Untitled 45.png|Untitled 45.png]]
 
-![[/Untitled 1 30.png|Untitled 1 30.png]]
 
   
 
@@ -29,7 +27,6 @@ Elasticache is a fully managed Redis and Memached distributed memorcy cache in t
 - backup and restore features
 - supports complex data type
     
-    ![[/Untitled 2 25.png|Untitled 2 25.png]]
     
 
   
@@ -44,8 +41,7 @@ Elasticache is a fully managed Redis and Memached distributed memorcy cache in t
 - no backup and restore
 - multi-threaded architecture
     
-    ![[/Untitled 3 25.png|Untitled 3 25.png]]
-    
+   
 
 ## 3. Pricing
 

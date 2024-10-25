@@ -31,7 +31,6 @@
 - secrets file must be < 4KB
     - overcome with Envelope Encryption
 
-![[/Untitled 21.png|Untitled 21.png]]
 
 ## Envelope Encryption
 

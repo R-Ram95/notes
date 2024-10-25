@@ -92,7 +92,6 @@ Pricing:
 - do not need to detach volume to do snapshot, but is recommended
 - can copy snapshots across AZs or regions
 
-![[/Untitled 46.png|Untitled 46.png]]
 
 ## Features
 

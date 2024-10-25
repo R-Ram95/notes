@@ -55,7 +55,6 @@ Fully managed service that offers reliability, security, scalability and a lot o
 
 For fast-storage to keep up with fast compute, highest level of throughput and IOPS. Lustre can be natively configured with S3 for low-cost storage
 
-![[/Untitled 28.png|Untitled 28.png]]
 
 **Features:**
 

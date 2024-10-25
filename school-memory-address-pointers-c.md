@@ -4,16 +4,13 @@
 - variables and function argument data located on RAM
 - Binary Representation:
 
-![[/Untitled 44.png|Untitled 44.png]]
 
 - integer-like data types can be signed or unsigned:
     - signed - left most bit indicated sign
         
-        ![[/Untitled 1 29.png|Untitled 1 29.png]]
         
     - unsigned - all bits are used
         
-        ![[/Untitled 2 24.png|Untitled 2 24.png]]
         
 - adding one byte to the left double to max value of the data
 - overflow results in garbage
@@ -63,7 +60,6 @@ int main () {
 
 **AR Diagram**
 
-![[/Untitled 3 24.png|Untitled 3 24.png]]
 
 ### Example 2: Pass-by-Reference
 
@@ -104,8 +100,6 @@ void swap (int *x, int *y) {
 ```
 
 ### Example 3: Pointer and AR
-
-![[/Untitled 4 17.png|Untitled 4 17.png]]
 
 # More on Scanf
 

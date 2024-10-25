@@ -3,7 +3,7 @@
 
 # AWS Storage Portfolio
 
-![[/Untitled 14.png|Untitled 14.png]]
+
 
 # 1. Core Storage Services
 
@@ -23,11 +23,7 @@ Data is chunked up into fixed sizes and each chunk has an address. Block storage
 
 3) **Object Storage** - stored as objects in buckets
 
-Object storage can be used to store almost any data type with no limit to the number of objects stored. **Useful for storing large or unstructured data sets.** Object storage is also built on-top of block storage.
-
-![[/Untitled 1 7.png|Untitled 1 7.png]]
-
-![[/Untitled 2 8.png|Untitled 2 8.png]]
+Object storage can be used to store almost any data type with no limit to the number of objects stored. **Useful for storing large or unstructured data sets.** Object storage is also built on-top of block storag
 
 ### 1.1 Block Storage (AWS EBS)
 
@@ -69,7 +65,7 @@ AWS provides edge compute and storage solutions for remote or disonnected locati
 
   
 
-![[/Untitled 3 8.png|Untitled 3 8.png]]
+
 
 ### 2.1 Edge - Local Compute and Storage (AWS Snow Family)
 
@@ -115,7 +111,6 @@ AWS Storage Gateway has four offerings:
 
 Services designed to copy or transfer on-prem data to and from AWS storage services in the cloud.
 
-![[/Untitled 4 5.png|Untitled 4 5.png]]
 
 ### 3.1 File Transfer Services (AWS Transfer Family)
 
@@ -132,7 +127,7 @@ An online data transfer services that is used for:
 - replicating data
 - transfering data for analysis and processing
 
-![[/Untitled 5 5.png|Untitled 5 5.png]]
+
 
 ### 3.3 Offline data transfer (AWS Snow)
 
@@ -150,7 +145,7 @@ AWS Appication Migration Service (AWS MGN) is an automated lift-and-shift (rehos
 
 Services to meet data redundancy and disaster requirement needs.
 
-![[/Untitled 6 4.png|Untitled 6 4.png]]
+
 
   
 

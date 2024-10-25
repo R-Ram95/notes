@@ -1,4 +1,3 @@
-
 # Intent
 
 The bridge pattern is used to decouple abstraction from implementation in order to change or extend each independently. An interface is separate from the functionality of concrete classes from interface implementers
@@ -16,8 +15,6 @@ The bridge pattern is used to decouple abstraction from implementation in order 
 **Concrete Implementation** - implements the implementor
 
 ## UML Class Diagram
-
-![[/Untitled 78.png|Untitled 78.png]]
 
 # Example
 

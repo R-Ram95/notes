@@ -31,7 +31,6 @@ Custom Runtime API
 - Results are return right away
 - Error handling on client side
 
-![[/Untitled 15.png|Untitled 15.png]]
 
 ## Services
 
@@ -44,7 +43,6 @@ Custom Runtime API
 - Expose Lambda as HTTPS endpoint using ALB (or Gateway)
 - lambda must be registered as target group
 
-![[/Untitled 1 8.png|Untitled 1 8.png]]
 
 ### ALB to Lambda and Back
 
@@ -53,11 +51,9 @@ ALB TO LAMBDA: HTTP TO JSON
 - Request payload for lambda is turned into a JSON by the ALB
 - JSON is sent to Lambda
 
-![[/Untitled 2 9.png|Untitled 2 9.png]]
 
 LAMBDA TO ALB: JSON TO HTTP
 
-![[/Untitled 3 9.png|Untitled 3 9.png]]
 
   
 
@@ -66,7 +62,6 @@ LAMBDA TO ALB: JSON TO HTTP
 - if header or query parameters contain the same name for keys but different values, the ALB sends the params as an array in the JSON.
 - must enable the multi-header option
 
-![[/Untitled 4 6.png|Untitled 4 6.png]]
 
 ## Lambda@Edge
 
@@ -95,7 +90,6 @@ LAMBDA TO ALB: JSON TO HTTP
 - Lambda must poll for records (ask each service for records)
 - Lambda is invoked synchonously
 
-![[/Untitled 5 6.png|Untitled 5 6.png]]
 
 ## Streams (Kinesis & DynamoDB)
 
@@ -116,7 +110,6 @@ On Error:
 
 ## Queues (SQS and SQS FIFO)
 
-![[/Untitled 6 5.png|Untitled 6 5.png]]
 
 - uses Event Source Mapping
 - will poll SQS using Long Polling
@@ -177,7 +170,6 @@ On Error:
 
 By default, Lambda is launched outside your VPC on an AWS-owned VPC ⇒ it cannot access resources in your VPC (RDS, Elasticache, internal ELB, etc.)
 
-![[/Untitled 7 3.png|Untitled 7 3.png]]
 
 Solution:
 
@@ -186,7 +178,6 @@ Solution:
 - Lambda creates ENI(Elastic Network Interface) in your subnets
 - Requires AWSLambdaVPCAccessExecutionRole
 
-![[/Untitled 8 3.png|Untitled 8 3.png]]
 
 - RDS Security group requires network access to Lambda Security Group
 
@@ -196,7 +187,6 @@ Caveat:
 - deploying Lambda in a public subnet does not give it internet access or public IP
 - Solution ⇒ deploy lambda in private subnet and give it Internet access using NAT gateway
 
-![[/Untitled 9 3.png|Untitled 9 3.png]]
 
 # Performance
 

@@ -1,6 +1,5 @@
 # Auto Scaling
 
-![[/Untitled 48.png|Untitled 48.png]]
 
 The goal of ASG is to scale in an out EC2 instances for increased and decreased demands, repectively. You set a min, preferred and max number of instances. The ASG automatically reigsterd EC2 instaces to ELB and recreates EC2 instances if they fail health checks. ASG IS FREE.
 
@@ -26,7 +25,6 @@ The ASG needs to know the following thing to create EC2 instances on your behalf
 - scaling policies
 - OS
     
-    ![[/Untitled 1 32.png|Untitled 1 32.png]]
     
 
 - Coupled with CloudWatch Alarms to scale in/out
@@ -59,7 +57,6 @@ Scheduled Actions
 
 ## Predictive Scaling
 
-![[/Untitled 2 26.png|Untitled 2 26.png]]
 
 - forecast load and schedule scaling ahead
 
@@ -67,8 +64,6 @@ Scheduled Actions
 
 - CPU Utilization: AVG CPU usage across all instances
 - RequestCountPerTarget: make sure # of requests per EC2 is stable
-    
-    ![[/Untitled 3 26.png|Untitled 3 26.png]]
     
 - Avg Network In
 - Custom Metrics

@@ -44,7 +44,6 @@ Both Automated backups (point in time recovery) and manual snapshots (can retain
 
 ## Storage Autoscaling
 
-![[/Untitled 12.png|Untitled 12.png]]
 
 - increase storage dynamically
 - automatic scaling when you are running out of free space
@@ -57,7 +56,6 @@ Both Automated backups (point in time recovery) and manual snapshots (can retain
 
 ## RDS Read Replicas (Scaling)
 
-![[/Untitled 1 5.png|Untitled 1 5.png]]
 
 - help scale read operations
 - have up to 5 read replicas within AZ, Cross AZ or Cross Region
@@ -71,13 +69,11 @@ Both Automated backups (point in time recovery) and manual snapshots (can retain
 - same region different AZ = no cost
 - cross-region = cost
 
-![[/Untitled 2 6.png|Untitled 2 6.png]]
 
   
 
 ### Multi AZ (Disaster Recovery)
 
-![[/Untitled 3 6.png|Untitled 3 6.png]]
 
 - SYNC replication
 - one DNS name ⇒ automatic app failover
@@ -87,7 +83,6 @@ Both Automated backups (point in time recovery) and manual snapshots (can retain
 
 ### Single AZ to MultiAZ
 
-![[/Untitled 4 3.png|Untitled 4 3.png]]
 
 - 0 downtime (no need to stop DB)
 - just click “modify” for the DB
@@ -108,19 +103,6 @@ Aurora data is stored in cluster volumes, i.e. single virtual volumes that use S
 
 ## High Availability and Read Scaling
 
-![[/Untitled 5 3.png|Untitled 5 3.png]]
-
-- 6 copies across 3 AZ
-    - 4/6 copies for writes
-    - 3/6 copies for reads
-    - self-headling with p2p replication
-- one instance (Master) takes writes
-- master + 15 replicas can serve reads ⇒ scaling
-- supports cross region replication
-
-## Aurora DB Cluster
-
-![[/Untitled 6 2.png|Untitled 6 2.png]]
 
 - writer Endpoint ⇒ provides connection to the correct master in case of failover
 - reader end point ⇒ provides connection to the correct read replicas when using auto scaling

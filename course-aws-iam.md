@@ -5,7 +5,6 @@
 - Groups can only contain users, not other groups
 - users don’t have to belong to a group but can belong to multiple groups
     
-    ![[/Untitled 65.png|Untitled 65.png]]
     
 - IAM permissions:
     - policies (in the form of JSON documents) are assigned to Users or Groups
@@ -16,9 +15,7 @@
 - All users inherit the policy for the group
 - users without policy get an inline policy
     
-    ![[/Untitled 1 45.png|Untitled 1 45.png]]
     
-    ![[/Untitled 2 36.png|Untitled 2 36.png]]
     
 
 ## IAM Policy Structure (JSON)
@@ -80,8 +77,6 @@ Policy Statement:
     - **DecodeAuthorizationMessage**: decode error message when API is denied
 
 # Advanced IAM
-
-![[/Untitled 3 34.png|Untitled 3 34.png]]
 
 - Explicit Deny wins ⇒ evaluated first
 

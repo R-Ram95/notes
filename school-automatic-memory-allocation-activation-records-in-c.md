@@ -12,7 +12,6 @@ Programs are run in RAM. Four memory segments are used:
 - Heap
     - used for dynamic memory allocation
 
-![[/Untitled 10.png|Untitled 10.png]]
 
 Global variables are initialized to 0
 
@@ -55,12 +54,7 @@ An Activation Record is a snapshot of the stack showing at a moment in time show
 - variable should have value or ? if value is unknown
 - drawn in order from bottom to top (main on the bottom)
 
-![[/Untitled 1 3.png|Untitled 1 3.png]]
 
   
 
-## AR: Example
 
-![[/Untitled 2 4.png|Untitled 2 4.png]]
-
-![[/Untitled 3 4.png|Untitled 3 4.png]]

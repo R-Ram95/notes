@@ -16,7 +16,6 @@
 
   
 
-![[/Untitled 24.png|Untitled 24.png]]
 
 Client ⇒ backend web application
 
@@ -60,7 +59,6 @@ This flow allows a User to authorize a client to access resources on their behal
 - About authentication
 - Same flow as OAuth BUT instead of issuing an Access Token, it issues an Identity Token
 
-![[/Untitled 1 13.png|Untitled 1 13.png]]
 
 ## Resources
 

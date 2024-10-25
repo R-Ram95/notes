@@ -15,7 +15,6 @@ The strategy pattern and bridge pattern are similar, but differ on their intent.
 - Context uses the Strategy interface
 - Each variation of a behaviour is implemented in Strategy
 
-![[/Untitled 79.png|Untitled 79.png]]
 
 ## General Template in Java
 
@@ -79,8 +78,6 @@ class Context {
 - functionality includes: walk, swim, etc.
 
 ## UML Class Diagram
-
-![[/Untitled 1 55.png|Untitled 1 55.png]]
 
 - Animals movement is changeable so it is an interface
 - Types of movements Realize the interface

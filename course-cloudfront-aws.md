@@ -17,19 +17,15 @@
 
 S3 as origin:
 
-![[/Untitled 38.png|Untitled 38.png]]
 
 - OAI is an IAM role for cloudfront
 
 EC2 as Origin:
 
-![[/Untitled 1 24.png|Untitled 1 24.png]]
 
 - traffic traverses security group around EC2
 - EC2 must be public
 - EC2 security group must allow ip addresses of edge locations
-
-![[/Untitled 2 20.png|Untitled 2 20.png]]
 
 - security group around ALB
 - ALB must be public
@@ -69,8 +65,6 @@ Cache based on:
     - invalidate part of the cache using the `CreateInvalidation` API
 - Maximize cache hits by separating static and dynamic distributions
     - use different distributions of CloudFront
-        
-        ![[/Untitled 3 20.png|Untitled 3 20.png]]
         
 
   

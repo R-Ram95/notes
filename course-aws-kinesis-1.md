@@ -12,7 +12,6 @@ What is Streaming Data?
 
 Kinesis is a family of analytics services for streaming data.
 
-![[/Untitled 54.png|Untitled 54.png]]
 
 # Kinesis Data Streams
 
@@ -22,13 +21,9 @@ Kinesis is a family of analytics services for streaming data.
 - syncronously replicates data across 3 AZ’s and data can be stored for 7 days
 - can handle MB to TB/hour and thousands to millions of PutRecords/second
 
-![[/Untitled 1 35.png|Untitled 1 35.png]]
-
   
 
 **Architecture**
-
-![[/Untitled 2 29.png|Untitled 2 29.png]]
 
 Data Stream - logical grouping of shards (retained for min 24hours but extended to 7 days)
 
@@ -53,8 +48,6 @@ Partition Key - meaningful identifier for click stream or time stamp
 
 - loads streaming data into data lakes, data stores, and analytics tools
 - enables near real-time analytics
-
-![[/Untitled 3 29.png|Untitled 3 29.png]]
 
   
 
@@ -99,5 +92,3 @@ Data Analytics app has three components
 2) Application Code - Java Operatrors or SQL statement that process data
 
 3) Output - where app code writes to after completing processing
-
-![[/Untitled 4 20.png|Untitled 4 20.png]]

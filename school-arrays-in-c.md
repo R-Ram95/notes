@@ -14,7 +14,6 @@ int a[3] = {44, 66, 85}; // declares array of three ints
 
 in memory:
 
-![[/Untitled 11.png|Untitled 11.png]]
 
 ## 1.1 Declaration
 
@@ -29,7 +28,6 @@ in memory:
     
 - C99 allows for variable-length array declaration:
     
-    ![[/Untitled 1 4.png|Untitled 1 4.png]]
     
 
 ## 1.2 Initialization
@@ -95,7 +93,6 @@ in memory:
     ```
     
 
-![[/Untitled 2 5.png|Untitled 2 5.png]]
 
 - when declaring a C-string, the length of the Character array must be able to include NULL at the end
     
@@ -200,8 +197,6 @@ in memory:
     - char *p = "KLH" // not as good
     - const char *ptc = "CBC" // better - why??
 - AR diagram:
-    
-    ![[/Untitled 3 5.png|Untitled 3 5.png]]
     
     - const char *ptr is located in String Constant Area in Static
     - char str [] is located on the stack

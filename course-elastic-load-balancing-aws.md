@@ -6,13 +6,11 @@ Elastic Load Balancer (ELB) is a managed load balancer that distributes traffic 
 - AWS takes care of upgrades, maintenance, high availability
 - provides only a few configuration knobs
 
-![[/Untitled 61.png|Untitled 61.png]]
 
   
 
 **Load Balancer Security:**
 
-![[/Untitled 1 42.png|Untitled 1 42.png]]
 
 - Load balancer accepts requests from anywhere
 - EC2 should only accept requests from Load Balancer
@@ -49,7 +47,6 @@ Target Group server side
 
   
 
-![[/Untitled 2 33.png|Untitled 2 33.png]]
 
 - EC2 instance (can be managed by Auto Scaling Groups) - HTTP
 - ECS tasks - HTTP
@@ -83,26 +80,6 @@ ALBs are ideal for balancing HTTP and HTTPS traffic based on request data.
 - ALB is good for micro services and container based applications
 - has port mapping feature ⇒ redirects to dynamic port in ECS
 
-![[/Untitled 3 32.png|Untitled 3 32.png]]
-
-  
-
-## Network Load Balancer (NLB)
-
-NLB is ideal for balancing TCP and UDP traffic based on IP protocol data.
-
-- works in layer 4 (TCP & UDP)
-- millions of requests per second
-- ~100ms latency vs 400ms (ALB)
-- one static IP per AZ
-- **NLB = extreme performance, TCP or UDP**
-- Target groups:
-    - EC2 Instance
-    - Ip addresses - private
-    - ALB
-- health checks support TCP, HTTP, HTTPS
-
-![[/Untitled 4 22.png|Untitled 4 22.png]]
 
 ## Gateway Load Balancer (ALB)
 
@@ -117,7 +94,6 @@ NLB is ideal for balancing TCP and UDP traffic based on IP protocol data.
     - EC2
     - Ip address - private
     
-    ![[/Untitled 5 16.png|Untitled 5 16.png]]
     
 
 # Sticky Sessions
@@ -151,15 +127,12 @@ NLB is ideal for balancing TCP and UDP traffic based on IP protocol data.
 - Load Balancers can redirect traffic to multiple domains ⇒ how do we load multiple certificates for multiple domains?
 - Using Server Name Identification (SNI)
     
-    ![[/Untitled 6 13.png|Untitled 6 13.png]]
-    
     - client requests to specific domain
     - LB can send the correct cert relevant to the requested domain
     - SNI is only available to ALB and NLB ⇒ CLB requires a separate CLB for each domain
 
 # Session Draining
 
-![[/Untitled 7 9.png|Untitled 7 9.png]]
 
 Concept is called:
 
@@ -174,4 +147,3 @@ Deregistration Delay - ALB & NLB
 
 # Selecting between ELB types
 
-![[/Untitled 8 8.png|Untitled 8 8.png]]

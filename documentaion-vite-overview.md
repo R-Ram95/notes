@@ -5,19 +5,16 @@
 
 **Bundle Based Dev Server:**
 
-![[/Untitled 71.png|Untitled 71.png]]
 
 Webpack runs a bundle based dev server. Webpack will bundle the application before serving it in dev. You can see this because the entry file will be a bundled file. Every time changes are made to the source code, the bundler needs to rebuild the whole bundle, as the app gets bigger (more source code) this build process takes longer.
 
 Heres an example using the Nutrien SHE app. Both the orchestrator and Auth apps are using Webpack5. The Orchestrator is running on port 9000 and the Auth app is running on port 9002. A search of material for the MaterialUI library in the entry file of the auth app `nutrien-she-auth-app.js` shows up in the file which proves that Webpack is bundling the source code and serving it in dev. NOTE: Webpack is bundling to the `systemjs` format (the top of the file show `System.register(...)`
 
-![[/Untitled 1 48.png|Untitled 1 48.png]]
 
   
 
 **Native ESM Based Dev Server:**
 
-![[/Untitled 2 38.png|Untitled 2 38.png]]
 
 Vite runs a Native ESM based. Vite serves source code over native ESM which modern browsers are able the understand. The source code is served without bundling, i.e. the entry file still includes`import` statements. Vite leverages the fact that modern browsers support native ESM and lets the browser resolve the imports rather than using the build process to build and bundle before serving the files in dev. Vite only needs to transform and serve source code as the browser requests it.
 
@@ -25,7 +22,6 @@ HMR in Vite is performed over native ESM. When a file is edited, Vite figures ou
 
 Here is an example using the xerris orchestrator app and the xerris auth app which are run on ports 9000 and 9002 respectively. The entry file for the xerris-auth-app contains the `import` statements fo react, react-dom, and single-spa. Note that Vite did not bundle the libraries into the entry file, rather, it lets the browser take care of this during run time.
 
-![[/Untitled 3 36.png|Untitled 3 36.png]]
 
 # Storybook
 

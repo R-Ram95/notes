@@ -3,7 +3,6 @@
 
 Adapter pattern is used to allow incompatible classes to work together. An example is if we have legacy software that we want to use, but it's methods are un-useable by the client. Here is the general UML class diagram:
 
-![[/Untitled 77.png|Untitled 77.png]]
 
 **Target** - defines an interface that is useable by the client
 
@@ -52,8 +51,6 @@ class Client{
 
 - legacy code for line and rectangle
 - client needs to use the code, but it's interface does not match
-
-![[/Untitled 1 54.png|Untitled 1 54.png]]
 
 ## Step 1: Legacy Classes (Adaptees)
 

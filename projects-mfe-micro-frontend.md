@@ -282,7 +282,6 @@
     
     If you're familiar with Vite, you might typically use `**npm run dev**` or `**npx vite**` to start the development server. However, in this particular scenario, these commands won't address our needs. Instead, we need to build and preview the project locally using `npm run build` or `npx vite build` and `npm run preview` or `npx vite preview`. We need to do this because the Vite Module Federation plugin exposes our button through the `remoteEntry.js` file which is generated on `vite build`. When we run `vite build` we should see these generated files in the `dist/assets` folder:
     
-    ![[/Untitled 7 7.png|Untitled 7 7.png]]
     
       
     
@@ -400,7 +399,6 @@
     
     To run the project, we need to run `npm run dev` in the host and `npm run build` then `npm run preview` in the remote and we see this:
     
-    ![[/Untitled 8 6.png|Untitled 8 6.png]]
     
     ## Proof of Concept
     
@@ -414,8 +412,6 @@
     One of the nice things that Single-spa does for us is manage the lifecycles of MFE applications in the root-config (shell) via the Lifecycle methods (bootstrap, mount, and unmount) which define **how** applications are added to the DOM and activity functions which decide **when** the application are rendered to the user. Our POC will need to do the same. Let us deal with the **when** first.
     
     The way we will achieve this is by using React Router in our shell application. This will work by having different routes for each of the React, Vue and Angular applications. When the browser is on a route, we simply load that applications code into the browser and render it on the DOM. For example when we are on the `/react` route we will load the code from `App.jsx` into the Browser. Here is a diagram illustrating this. Also, note that our shell application will need to be a React app if we choose to the react router.
-    
-    ![[/Untitled 70.png|Untitled 70.png]]
     
       
     

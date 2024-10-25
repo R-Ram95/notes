@@ -1,8 +1,3 @@
----
-tags:
-  - Docker
----
-![[/Untitled 58.png|Untitled 58.png]]
 
 What is a container?
 
@@ -28,8 +23,6 @@ What is an image?
 - read-only template with instructions for creating a container
 - build images on top of existing images
 - each instruction in dockerfile creates a layer
-    
-    ![[/Untitled 1 39.png|Untitled 1 39.png]]
     
 
 Containers are not storage units ⇒ persistent data must be stored on volumes

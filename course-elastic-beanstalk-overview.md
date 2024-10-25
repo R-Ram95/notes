@@ -13,13 +13,11 @@ tiers: web server environment, worker environment tier
 
 Web Server
 
-![[/Untitled 41.png|Untitled 41.png]]
 
 Client connects to ELB which directs traffic to an ASG
 
 Worker
 
-![[/Untitled 1 26.png|Untitled 1 26.png]]
 
 No client accesses the EC2 instance directly. EC2 workers pull messages from SQS queue
 
@@ -32,14 +30,12 @@ Single Instance → DEV
 - DNS name maps to Elastic IP
 - single AZ
 
-![[/Untitled 2 21.png|Untitled 2 21.png]]
 
 High Availability ⇒ PROD
 
 - DNS maps to ELB DNS name
 - spans multiple AZs
 
-![[/Untitled 3 21.png|Untitled 3 21.png]]
 
 Traffic Splitting === Canary Testing
 
@@ -55,7 +51,6 @@ Application is stopped and then the new version is spun up.
 - application has downtime when it is stopped
 - no additional cost
 
-![[/Untitled 4 14.png|Untitled 4 14.png]]
 
   
 
@@ -63,19 +58,16 @@ Application is stopped and then the new version is spun up.
 
 Update the application to v2 in batches (buckets). We set the bucket size. No Additional cost.
 
-![[/Untitled 5 12.png|Untitled 5 12.png]]
 
 ## Rolling with Additional Batches
 
 Like rolling except the application is always running at full capacity. New buckets are added to update the version before old ones are taken down. Small additional cost because we are adding new instances.
 
-![[/Untitled 6 9.png|Untitled 6 9.png]]
 
 ## Immutable
 
 New code is deployed to new instances and a temporary ASG. High cost, double capcity. Quick rollback in case of failures.
 
-![[/Untitled 7 6.png|Untitled 7 6.png]]
 
 ## Blue / Green
 
@@ -83,8 +75,6 @@ New code is deployed to new instances and a temporary ASG. High cost, double cap
 - create a new “state” environment and push V2 up ⇒ previous options took place on the same env
 - use Route 53 to setup weighted policies to direct a test portion of traffic to the stage env
 - use Beanstalk to swap URLs once env test is done
-
-![[/Untitled 8 5.png|Untitled 8 5.png]]
 
   
 

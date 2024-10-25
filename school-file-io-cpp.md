@@ -1,8 +1,6 @@
 #
 - hierarchy of stream classes in C++ standard library
 
-![[/Untitled 52.png|Untitled 52.png]]
-
 # File I/O
 
 ## Steps for File I/O

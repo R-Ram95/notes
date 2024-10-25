@@ -9,7 +9,6 @@ tags:
 - used to perform required operation on a specific window size of a given array or linkedlist
 - start from the 1st element and keep shifting right by 1
 
-![[/Untitled 27.png|Untitled 27.png]]
 
 can be used when:
 
@@ -39,7 +38,6 @@ function slidingWindow(arr) {
 
 - two pointers iterator through a data structure in tandem until one or both pointers his an end condition
 
-![[/Untitled 1 16.png|Untitled 1 16.png]]
 
 can be used when:
 
@@ -102,7 +100,6 @@ function twoPtr2input(arr1, arr2) {
 - useful when dealing cyclic linked lists or arrays
 - the fast ptr should catch the small ptr once both pointers are in a cyclic loop
 
-![[/Untitled 2 15.png|Untitled 2 15.png]]
 
 Can be used when:
 
@@ -136,7 +133,6 @@ function fastSlow(head) {
 - previous = current
 - current = next
 
-![[/Untitled 3 15.png|Untitled 3 15.png]]
 
 ```JavaScript
 function reverseLinkedList(head) {
@@ -165,7 +161,6 @@ function reverseLinkedList(head) {
     - read the node at the head of the queue
     - add the nodes children to the queue
 
-![[/Untitled 4 10.png|Untitled 4 10.png]]
 
 ```JavaScript
 function treeBFS(head) {
@@ -232,8 +227,6 @@ function treeDFS(root)=> {
 
 - when you are asked to find an element in a sorted array or matrix
 - you cut your search space down by a half after every iteration
-
-![[/Untitled 5 9.png|Untitled 5 9.png]]
 
 Steps:
 

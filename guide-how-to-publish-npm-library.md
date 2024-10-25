@@ -168,7 +168,6 @@ This procedure is to publish an npm library from an existing github repo.
 
 3) Select `write:packages` permission
 
-![[/Untitled 69.png|Untitled 69.png]]
 
 ## Using Private Repo
 
@@ -178,7 +177,6 @@ This procedure is to publish an npm library from an existing github repo.
 
 3) select `read:packages` permission
 
-![[/Untitled 1 47.png|Untitled 1 47.png]]
 
 # Resources
 

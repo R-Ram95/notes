@@ -83,11 +83,6 @@ React creates a snap shot of our component ⇒ snapshot is composed of:
 
 React takes this snapshot and uses it to update the view:
 
-![[/Untitled 36.png|Untitled 36.png]]
-
-![[/Untitled 1 22.png|Untitled 1 22.png]]
-
-![[/Untitled 2 18.png|Untitled 2 18.png]]
 
 ## When do re-renders happen?
 
@@ -126,8 +121,6 @@ export default function App () {
 ```
 
 The wave component will re-render every time index changes because `<Wave/>` is a child component of `Greeting`
-
-![[/Untitled 3 18.png|Untitled 3 18.png]]
 
 - React will only re-render child components if their props change IF the components are **pure** functions:
   - do not have internal state

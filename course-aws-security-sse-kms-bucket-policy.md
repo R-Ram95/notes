@@ -1,6 +1,5 @@
 # Overview
 
-![[/Untitled 17.png|Untitled 17.png]]
 
 # S3 Encryption for Objects
 

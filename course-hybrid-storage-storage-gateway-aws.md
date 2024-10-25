@@ -8,11 +8,9 @@ Storage gateway is a hybrid solution that connects an on-prem appliance with clo
 
 Overview of the process
 
-![[/Untitled 43.png|Untitled 43.png]]
 
 # 2. Types of Storage Gateways
 
-![[/Untitled 1 28.png|Untitled 1 28.png]]
 
 ## 2.1 **S3 File Gateway**
 
@@ -130,13 +128,11 @@ You need to allocate and configure a local disk if you are using the VM for stor
 
 **You can choose S3 storage type:**
 
-![[/Untitled 2 23.png|Untitled 2 23.png]]
 
 **Adding file shares to the gateway Appliance**
 
 You can create file shares that can be mounted on Linux or Windows servers. SMB for Windows, NFS for Linux. A file gateway can host one or more file shares of different types:
 
-![[/Untitled 3 23.png|Untitled 3 23.png]]
 
 # 6.2 How S3 File Gateway Reads, Writes, Updates
 
@@ -208,7 +204,6 @@ Controll access using:
 - block storage data is stored in AWS S3 service bucket (not customer bucket)
 - manage data stored through EBS snapshots
 
-![[/Untitled 4 16.png|Untitled 4 16.png]]
 
 **How it works:**
 
@@ -244,7 +239,6 @@ Stored Volume7 is only for on-prem host platform. Data is stored on-prem and sna
 
   
 
-![[/Untitled 5 14.png|Untitled 5 14.png]]
 
   
 
@@ -334,8 +328,6 @@ Change Volume Config
 ## 7.5 Secure and Monitor Gateway
 
 ### 7.5.1 Granting Permissions
-
-![[/Untitled 6 11.png|Untitled 6 11.png]]
 
 - The Volume Gateway needs to authenticate to AWS to write volume data to S3
 - AWS Creds must have access to Gateway File Share, Volume or Tape

@@ -14,7 +14,6 @@
 - VPC ⇒ virtual network in the cloud
 - Subnet ⇒ range of ip addresses in a VPC
     
-    ![[/Untitled 56.png|Untitled 56.png]]
     
 
 # 2. VPC
@@ -97,15 +96,12 @@ NACL is like a virtual firewall at the **subnet level** ⇒ it allows you to con
 
   
 
-![[/Untitled 1 37.png|Untitled 1 37.png]]
 
 # 8. Security Groups
 
 Secures access at the EC2 **Instance level**. By default, only allows outbound traffic. Security Groups are stateful ⇒ they remember if a connection is initiated by the EC2 instance and allows responses without modifying inbound rules
 
 - control access at instance level by Port, Proctol and IP Range
-
-![[/Untitled 2 30.png|Untitled 2 30.png]]
 
   
 

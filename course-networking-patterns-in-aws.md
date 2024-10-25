@@ -28,7 +28,6 @@
     - uses for traffic destined for DynamoDB or S3
     - below, subnet 1 can reach internet and S3, subnet 2 can only reach S3
         
-        ![[/Untitled 33.png|Untitled 33.png]]
         
     
     ### Interface Endpoints
@@ -62,11 +61,9 @@
     
     1) Sharing of resources between all VPCs
     
-    ![[/Untitled 1 20.png|Untitled 1 20.png]]
     
     2) Partial Sharing of Centralized Resources
     
-    ![[/Untitled 2 16.png|Untitled 2 16.png]]
     
     ## Non-Valid Perring Connections
     
@@ -89,14 +86,12 @@
 
 From this:
 
-![[/Untitled 3 16.png|Untitled 3 16.png]]
 
 - new departments need to create a new vpn connection
 - there is no way to centrally manage traffic - routing and network security groups are handled within each vpc, modifications to traffic controls or deployment of new systems requires an engineer to reconfigure muliple vpcs
 
 To this:
 
-![[/Untitled 4 11.png|Untitled 4 11.png]]
 
 - one transit gateway replaces the VPC peering connections
 - routing tables are centralized to the transit gateway
@@ -107,14 +102,12 @@ To this:
 
 from this:
 
-![[/Untitled 5 10.png|Untitled 5 10.png]]
 
 - AWS Direct Connect Gateway offer four nines of availability
 - there is 1 router at each Partner location → each router is a single point of failure that, if it goes down, the company loses access to AWS
 
 to this:
 
-![[/Untitled 6 7.png|Untitled 6 7.png]]
 
 - another router is added at each partner location
     - each WAN circuit terminates at a different router
@@ -126,11 +119,8 @@ to this:
 - Route53 routes users to region with the lowest latency
 - VPC Peering keeps the two DBs insync. Incase a user loses connection, they pick up where they left off when they reconnect because the DBs are in sync (Inter-region VPC Peering)
 
-![[/Untitled 7 5.png|Untitled 7 5.png]]
 
 ## Transit Gateway Peering
 
 - Transit Gateway supports routing traffic between two or more VPCs within an AWS Region
 - Transit Gateway is used to support inter-region peering.
-
-![[/Untitled 8 4.png|Untitled 8 4.png]]

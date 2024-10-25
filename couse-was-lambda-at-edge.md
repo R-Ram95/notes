@@ -8,13 +8,11 @@ Lambda@Edge is triggered by:
 - Origin Response ⇒ CF receives response from Origin
 - Viewer Response ⇒ After CF sends response to Viewer
 
-![[/Untitled 72.png|Untitled 72.png]]
 
   
 
 When you create a trigger, Lambda replicated the function to AWS locations:
 
-![[/Untitled 1 49.png|Untitled 1 49.png]]
 
 # IAM Permissions
 
@@ -202,8 +200,6 @@ Description of fields:
 # Authorization Lambda
 
 Using Cognito
-
-![[/Untitled 2 39.png|Untitled 2 39.png]]
 
 # Resources
 

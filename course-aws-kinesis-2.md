@@ -67,7 +67,6 @@ How to get data into Kinesis.
 
 Shared (Classic) Fan-out Consumer - Pull Model
 
-![[/Untitled 74.png|Untitled 74.png]]
 
 - consumers share the 2 MB/s data transfer (e.g. each gets 666KB/s)
 - low # of consuming apps
@@ -80,7 +79,6 @@ Shared (Classic) Fan-out Consumer - Pull Model
 
 Enhanced Fan-out - Push Model
 
-![[/Untitled 1 51.png|Untitled 1 51.png]]
 
 - multiple consuming applications per stream
 - 2MB/s per consumer per shard
@@ -105,8 +103,6 @@ Enhanced Fan-out - Push Model
 - Near Real Time service
     - 60s latency min
     - need to wait till atleast 1MB to send
-
-![[/Untitled 2 41.png|Untitled 2 41.png]]
 
 # Kinesis Data Analytics
 

@@ -36,7 +36,6 @@ we can choose exactly how we want out virtual machine to be
 - firewall rules: security group
 - bootstrap script ⇒ configure at first launch: EC2 User Data
 
-![[/Untitled 23.png|Untitled 23.png]]
 
 # EC2 Lifecycle
 
@@ -60,7 +59,6 @@ Similar to shutting down laptop, when you stop, machine state is preserved
 
 instance stores are erased
 
-![[/Untitled 1 12.png|Untitled 1 12.png]]
 
 # EC2 User Data
 
@@ -135,7 +133,6 @@ m - instance class
 - **all inbound traffic is blocked by default**
 - **all outbound traffic is authorized by default**
 
-![[/Untitled 2 12.png|Untitled 2 12.png]]
 
 ** Ports to Know **
 
@@ -176,7 +173,6 @@ m - instance class
 
 Difference between Dedicated Hosts and Instances:
 
-![[/Untitled 3 12.png|Untitled 3 12.png]]
 
 Hosts:
 
@@ -189,8 +185,6 @@ Instance:
 
 # EC2 Capacity Reservations
 
-![[/Untitled 4 8.png|Untitled 4 8.png]]
 
 # Summary
-
-![[/Untitled 5 8.png|Untitled 5 8.png]]
+ 

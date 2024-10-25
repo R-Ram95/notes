@@ -15,12 +15,10 @@ A one-to-many dependency between objects where the subject notifies dependent ob
 
 - usage in GUI applications:
     
-    ![[/Untitled 80.png|Untitled 80.png]]
     
     - any changes in `Subject` data members a, b, or c will be translated in the three observer views
 - usage in notification system:
     
-    ![[/Untitled 1 56.png|Untitled 1 56.png]]
     
     - `JobSeeker` observes the `HeadHunter` for available jobs
         - `JobSeeker` is notified when jobs are added
@@ -64,8 +62,6 @@ Create one or more class that implements `Observer`
   
 
 # Example
-
-![[/Untitled 2 44.png|Untitled 2 44.png]]
 
 - why don't horizontal view and vertical view show aggregation with Subject?
 

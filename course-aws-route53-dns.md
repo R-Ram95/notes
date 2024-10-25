@@ -1,7 +1,6 @@
 
 # Domain Name Service (DNS) terminology
 
-![[/Untitled 16.png|Untitled 16.png]]
 
 # Record Types
 
@@ -36,7 +35,6 @@ Alias:
 - always of type A/AAAA for aws resources
 - cant set TTL
 
-![[/Untitled 1 9.png|Untitled 1 9.png]]
 
 ### Alias Record Targets
 

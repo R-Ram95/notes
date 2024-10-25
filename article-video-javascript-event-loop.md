@@ -26,7 +26,6 @@
         [https://medium.com/@lydiahallie/javascript-visualized-promises-async-await-a3f1aad8a943](https://medium.com/@lydiahallie/javascript-visualized-promises-async-await-a3f1aad8a943)
         
     
-    ![[/Untitled 32.png|Untitled 32.png]]
     
     ```JavaScript
     new Promise((resolve, reject) => {
@@ -66,7 +65,6 @@
     - result is a `Promise`
     - result of previous `.then()` is the argument of the next callback
     
-    ![[/Untitled 1 19.png|Untitled 1 19.png]]
     
     `.catch()`
     

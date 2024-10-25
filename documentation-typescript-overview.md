@@ -14,15 +14,12 @@ tags:
 
 # The Compiler
 
-![[/Untitled 55.png|Untitled 55.png]]
 
 - Compilation process starts when you invoke `tsc` command
 
   
 
 **Program** - “project coordinator”, it coordinates the process
-
-![[/Untitled 1 36.png|Untitled 1 36.png]]
 
 ## References
 

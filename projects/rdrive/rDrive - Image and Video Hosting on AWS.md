@@ -37,7 +37,6 @@ tags:
 
  [!important]  
  **Architecture**  
- ![[/image 2.png|image 2.png]]  
  
  **Flow Summary**  
  1. The user accesses the web app and requests resources via API Gateway.  

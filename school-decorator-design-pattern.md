@@ -41,12 +41,10 @@ Decorator pattern is used when we want to add properties to an existing object. 
 - GUI components:
     - textView that we want to add: scroll bars (horizontal, vertical, etc), borders, etc.
         
-        ![[/Untitled 76.png|Untitled 76.png]]
         
 
 # Decorator Definition
 
-![[/Untitled 1 53.png|Untitled 1 53.png]]
 
 Main Elements:
 
@@ -68,7 +66,6 @@ NOTE: `Decorate`could be Abstract class
 
 # Example
 
-![[/Untitled 2 43.png|Untitled 2 43.png]]
 
 ## Step 1: Definition of Component Interface
 
@@ -195,7 +192,5 @@ public class DemoDecorator {
 	}
 }
 ```
-
-![[/Untitled 3 38.png|Untitled 3 38.png]]
 
 - the functionality of `Border` and `ScrollBar` are added to `Text` at runtime

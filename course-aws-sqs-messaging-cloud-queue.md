@@ -5,7 +5,6 @@ Producer - Send messages to the Queue
 
 Consumer - Poll messages from the Queue
 
-![[/Untitled 73.png|Untitled 73.png]]
 
 # Producer
 
@@ -23,7 +22,6 @@ Multiple Consumers
 
 # SQS with ASG
 
-![[/Untitled 1 50.png|Untitled 1 50.png]]
 
 - set up a CloudWatch metric to check for Queue Length via `ApproximateNumberOfMessages`
 - ClouthWatch alarm to watch metric, when triggered ⇒ scale the ASG
@@ -63,11 +61,9 @@ Cross Account
 - Action ⇒ receive messages from
 - Resource (SQS Queue) ⇒ 444455556666
 
-![[/Untitled 2 40.png|Untitled 2 40.png]]
 
 Public S3 events to SQS Queue
 
-![[/Untitled 3 37.png|Untitled 3 37.png]]
 
 # Visibility Timeout
 

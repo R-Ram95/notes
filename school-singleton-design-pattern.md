@@ -21,19 +21,14 @@ Benefits and Drawbacks
 - Self reference → Singleton class has private class data member of `Singleton` type
 - Static method access to private member field
 
-![[/Untitled 75.png|Untitled 75.png]]
-
 Java version
 
-![[/Untitled 1 52.png|Untitled 1 52.png]]
 
 C++ version
 
 NOTE that the assignment op is required here for when we set the static instance of singleton
 
 # Singleton Pattern Interactions
-
-![[/Untitled 2 42.png|Untitled 2 42.png]]
 
 - client 1 and 2 have access to the **SAME** Singleton object
 

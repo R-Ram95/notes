@@ -37,7 +37,6 @@ double* ptr = &d[0]; // pointer refers to the address of the first element in d
 ptr = ptr + 2; // The new value of ptr is 988 + 2 * 8 = 1004
 ```
 
-![[/Untitled 47.png|Untitled 47.png]]
 
 - *ptr now equals 7.7
 
@@ -67,6 +66,4 @@ int myArray[5] = { 31, 41, 22, 66, 90};
 int* ptr = myArray + 2;
 ```
 
-The following are all true:
 
-![[/Untitled 1 31.png|Untitled 1 31.png]]

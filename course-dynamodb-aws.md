@@ -87,7 +87,6 @@ The number of strongly consistent reads/second of items up to 4KB in size.
 
 - round up to the nearest 4KB
 
-![[/Untitled 51.png|Untitled 51.png]]
 
 ### 3.3.2 Write Capcity Unit (WCU)
 
@@ -97,7 +96,6 @@ The number of 1 KB writes per second
 
 - round up for item size
 
-![[/Untitled 1 34.png|Untitled 1 34.png]]
 
 ## 3.4 Throttling
 
@@ -149,7 +147,6 @@ These are used to perform queries on attributes that are not part of the tables 
 - streams are made of shards ⇒ like Kinesis
 - records are not populated retroactively ⇒ only records created after stream enabled will be in the stream
     
-    ![[/Untitled 2 28.png|Untitled 2 28.png]]
     
 
 ## 5.1 With Lambda
@@ -181,7 +178,6 @@ These are used to perform queries on attributes that are not part of the tables 
 - query and scan cache
 - if running complex filters or queries ⇒ better to store aggregation result in Elasticache
 
-![[/Untitled 3 28.png|Untitled 3 28.png]]
 
 # 7. Design Considerations
 
@@ -245,7 +241,6 @@ Use **Optimistic Locking with version number**
 - `TransactGetItems` - one or more `GetItem` calls
 - `TransactWriteItems` - one or more `PutItem, UpdateItem, DeleteItem` operations
 
-![[/Untitled 4 19.png|Untitled 4 19.png]]
 
 # Session State Cache
 

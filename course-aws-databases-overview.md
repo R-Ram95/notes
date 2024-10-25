@@ -19,7 +19,6 @@ You are responsible to ensure customer data is secure, query optimization
 
   
 
-![[/Untitled 49.png|Untitled 49.png]]
 
 # 2. Choosing the right DB
 
@@ -29,7 +28,6 @@ You are responsible to ensure customer data is secure, query optimization
 - read replica make it easy to scale out for read-heacy workloads
 - more read replicas = more capicity to server client
     
-    ![[/Untitled 1 33.png|Untitled 1 33.png]]
     
 
   
@@ -39,19 +37,16 @@ You are responsible to ensure customer data is secure, query optimization
 - fast in-memory data store
 - can store meta-data for userprofiles and viewing history
     
-    ![[/Untitled 2 27.png|Untitled 2 27.png]]
     
 
 **Use case:** Gaming Application ⇒ **DynamoDB**
 
 - automatically scales to millions of concurrent users and requests while maintaing low latency
     
-    ![[/Untitled 3 27.png|Untitled 3 27.png]]
     
 
   
 
-![[/Untitled 4 18.png|Untitled 4 18.png]]
 
 # 3. Terms
 
