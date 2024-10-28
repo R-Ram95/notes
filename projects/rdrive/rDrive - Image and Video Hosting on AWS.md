@@ -1,12 +1,26 @@
----
-id: rDrive - Image and Video Hosting on AWS
-aliases: []
-tags:
-  - Project-Notes
----
+
+# Writing the CICD pipeline
+I will write a basic CICD pipeline that builds and deploys both the FE and the BE on commit to main, I will refactor later using
+the nx affected command and pnpm work spaces
+    - detect when one of the sub folders changes
+    - set up aws credentials
+    - FE
+        - install the dependencies
+        - build FE to dist folder
+        - change into infrastructure folder and run cdk deploy (no approval)
+    - BE
+        - install depeendencies
+        - build the lambdas?
+        - change into infra folder and run cdk deploy (no approval)
+
+# Basic Pipeline
+- set up AWS
+- install dependencies for FE
+- install dependencies for BE
+- deploy FE
+- deploy BE
 
 
- [!important]  
  **Goal**  
  Create a frontend with auth that:  
  - Allows only 2 users  
@@ -35,7 +49,6 @@ tags:
    - Timestamp  
    - Size
 
- [!important]  
  **Architecture**  
  
  **Flow Summary**  
@@ -99,7 +112,6 @@ tags:
  
  **Notes**: Clerk's free tier sessions expire every 60 seconds, so we may need to run auth lambda every minute which could become costly. Unsure how to use Clerk with custom domains.
 
- [!important]  
  **DynamoDB Table Design**  
  Stores metadata attributes of images and videos:  
  - Uploader ID (string)  
@@ -129,7 +141,6 @@ tags:
  **Benefits**: Secure, scalable, efficient.  
  **Considerations**: URL expiration time, concurrent access, Lambda costs.
 
- [!important]  
  **Resources**  
  - [Supertokens - Email Password Auth](https://supertokens.com/features/email-password-authentication)  
  - [AWS Lambda Authorizer Guide](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)  

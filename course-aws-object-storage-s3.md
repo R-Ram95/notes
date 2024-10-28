@@ -1,8 +1,6 @@
-
 # 1. Introduction
 
 Amazon S3 provided object level storage. S3 stores objects in a flat, non-hierarchal structure, and objects are stored in resources called buckets. S3 supports parallel requests so it can scale by the factor of your compute. S3 supports 3500 add requests/s and 5500 retrieve requests.
-
 
 **Buckets**
 
@@ -14,15 +12,10 @@ Amazon S3 provided object level storage. S3 stores objects in a flat, non-hierar
 
 - they have a key
 - key is the full path
-    
-    **s3://my-bucket/**==**my_file.txt**==
-    
-    **s3://my-bucket/**==**my_folder1/another_folder/my_file.txt**==
-    
+  **s3://my-bucket/**==**my_file.txt**==
+  **s3://my-bucket/**==**my_folder1/another_folder/my_file.txt**==
 - composed of ==prefix== + ==object name==
-    
-    **s3://my-bucket/**==**my_folder1/another_folder**==**/**==**my_file.txt**==
-    
+  **s3://my-bucket/**==**my_folder1/another_folder**==**/**==**my_file.txt**==
 - no concept of directories
 - values are the content of the body
 - meta data
@@ -37,12 +30,12 @@ Lifecycle policy can be used to transition data between storage classes based on
 
 - transition objects from storage classes using life-cycle rules
 - Transition actions - transition objects from storage classes
-    - move objects to Standard-IA after 60 days after creation
-    - Move to glacier for archiving after 6 months
+  - move objects to Standard-IA after 60 days after creation
+  - Move to glacier for archiving after 6 months
 - Expiration actions - configure objects to expire (delete) after some time period
-    - access logs deleted after 365 days
-    - delete old versions of files
-    - delete incomplete mulit-part uploads
+  - access logs deleted after 365 days
+  - delete old versions of files
+  - delete incomplete mulit-part uploads
 
 ## 2.1 Frequently and Infrequently accessed data
 
@@ -106,12 +99,10 @@ Retrieval time is up to 12 hours.
 - bulk = 48 hours
 - min storage = 180 days
 
-  
-
 # 3. Features
 
 - Storage management
-    - range of ways to categorize data: bucket names, prefixes, object tags, S3 inventory
+  - range of ways to categorize data: bucket names, prefixes, object tags, S3 inventory
 - Version Control
 - Replication
 - Retention and Compliance
@@ -126,21 +117,20 @@ Retrieval time is up to 12 hours.
 
 Two types:
 
-1) Cross Region Replication (CRR)
+1. Cross Region Replication (CRR)
 
-2) Same Region Replication (SRR)
+2. Same Region Replication (SRR)
 
 NOTES:
 
 - only new objects are replicated after enabling replication
 - use S3 Batch Replication to replicate existing objects
 - DELETE operations
-    - replicate delete markers
-    - Deletions with version ids are not replicated to avoid malicious deletes
+  - replicate delete markers
+  - Deletions with version ids are not replicated to avoid malicious deletes
 - Cannot chain replications
 
 ## 3.2 Moving Between Storage Classes
-
 
 - infrequently accessed - **Standard-IA**
 - for archived objects that you DONT need fast access to - **Glacier or Glacier Deep Archive**
@@ -155,8 +145,6 @@ Provides organization wide visibility into object storage usage and activity tre
 
 Storage class analysis helps to analyze acces patterns to help you when to transition between storage classes.
 
-  
-
 # 5. S3 Access Control & Security
 
 ## 5.1 Access Management
@@ -164,8 +152,6 @@ Storage class analysis helps to analyze acces patterns to help you when to trans
 ### 5.1.1 User Based - Identity and Access Management
 
 This is where you create users to manage their access permissions. Specifies which API calls should be allowed for a specific user from IAM. NOTE: an IAM principal can access S3 object if: the user IAM permissions allow it OR the resource policy allows it AND there are no DENY
-
-
 
 ### 5.1.2 Access Control List
 
@@ -175,11 +161,7 @@ This is where individual objects accesible to authorized users
 
 The are bucket wide rules from the S3 console.
 
-
-
 Policy Structure:
-
-
 
 Resources: buckets and objects
 
@@ -191,8 +173,6 @@ Principal: the account or user to apply policy to
 
 ### 5.1.4 Access Points
 
-
-
 - create layer on-top of S3 bucket and attach policies that grant r/w access to a specific prefix
 - simplifies bucket policies ⇒ one policy per access point
 - access points get their own DNS and policy
@@ -201,13 +181,13 @@ Principal: the account or user to apply policy to
 
 - gives users temporary accesse to GET / PUT files in a private S3 Bucket
 - URL Expiration
-    - S3 console - 1 min to 12 hours
-    - AWS CLI 3600s - 168 hrs
+  - S3 console - 1 min to 12 hours
+  - AWS CLI 3600s - 168 hrs
 - users with pre-signed urls inherit permissions of the user that generated the URL
 - use cases:
-    - allow only logged in users to dl a premium video from S3
-    - allow an ever-changing list of users to dl files by generating urls dynamically
-    - allow temporarily a user to upload a file to a specific location in S3
+  - allow only logged in users to dl a premium video from S3
+  - allow an ever-changing list of users to dl files by generating urls dynamically
+  - allow temporarily a user to upload a file to a specific location in S3
 
 ## 5.2 On-prem Connectivity
 
@@ -219,13 +199,13 @@ Encrypt S3 buckets using:
 
 Server-side Encryption (SSE)
 
-1) Amazon S3 managed keys (SSE-S3)
+1. Amazon S3 managed keys (SSE-S3)
 
 - use encryption keys owned and managed by AWS
 
-2) KMS (SSE-KMS)
+2. KMS (SSE-KMS)
 
-3) Customer provided keys (SSE-C)
+3. Customer provided keys (SSE-C)
 
 - customer provides key
 
@@ -237,32 +217,23 @@ Client-side Encryption (CSE)
 
 ### 5.3.1 SSE-S3
 
-
-
 - encrypted server-side
 - type: AES-256
 - set header: `"x-amz-server-side-encruption":"AES256"`
 
 ### 5.3.2 SSE-KMS
 
-
 - manage our own keys using KMS
 - advantages: user control, audit key using CloudTrail
 - encrypted server-sde
 - header: **`"x-amz-server-side-encryption": "aws:kms"`**
 - limitations: need to make API calls (GenerateDataKey) using KMS API for each data upload ⇒ might reach throttling limit based on # of requests
-    
-
-    
 
 ### 5.3.3 SSE-C
 
 - keys managed outside of AWS
 - key must be sent to AWS
 - must use HTTPS and key is provided in the HTTP header for every request
-    
-
-    
 
 ## 5.4 Block Public Access
 
@@ -276,16 +247,12 @@ A feature that monitors your bucket access policies to ensure that policies prov
 
 Used to discover and protect senstive data stored in S3.
 
-  
-
 # 6. S3 Data processing and Query
 
 ## 6.1 Object Lambda
 
 - use AWS Lambda Functions to change the object before it is retrieved by the caller application
 - Only one S3 bucket is needed ⇒ create S3 AP ontop of S3 bucket and an S3 object AP to access the lambda
-
-
 
 ## 6.2 Query in place
 
@@ -306,14 +273,10 @@ You can run analytics directly in S3, i.e. you do not need to copy and load it i
 - Software delivery
 - Static website
 
-  
-
 # 8. S3 Event Notifications
 
 - can send events from S3 based on, e.g. S3:ObjectCreated, S3:ObjectDelete, etc to different AWS services
 - the 4 services are: **SNS**, **SQS**, **Lambda**, and **EventBridge**
-
-  
 
 # 9. S3 Performance
 
@@ -328,47 +291,27 @@ You can run analytics directly in S3, i.e. you do not need to copy and load it i
 Multi-part upload:
 
 - parallelize upload ⇒ decrease time to upload
-    
- 
-    
 
 S3 Transfer Acceleration:
 
 - transfer file to AWS Edge Location
 - forward data to target region
-    
-   
-    
 
 Parallelize GET:
 
 - request specific byte ranges
-    
-   
-    
 
 Retrieve only partial Data:
 
 e.g. head of a file
 
-
-  
-
-  
-
 # 10. CORS
 
 - Cross-Origin-Resource-Sharing
 - origin = scheme (protocol) + host (domain) + port
-    - same origin:
-        
-        **http://example.com/app1 & http://example.com/app2**
-        
-    - different origin:
-        
-        **http://www.example.com & http://other.example.com**
-        
+  - same origin:
+    **http://example.com/app1 & http://example.com/app2**
+  - different origin:
+    **http://www.example.com & http://other.example.com**
 - request not fulfilled if other origin does not allow requests
 - must enable cross origin requests
-
-
