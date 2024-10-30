@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "78b00700899c34d9",
+        "id": "249fe35044267af5",
         "type": "tabs",
         "children": [
           {
-            "id": "c8b3013a745246d7",
+            "id": "932e90bdbf147c7e",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -156,8 +156,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c8b3013a745246d7",
+  "active": "932e90bdbf147c7e",
   "lastOpenFiles": [
+    "design/infrastructure-architecture-xerris-react-comp.drawio.pdf",
+    "projects/food-expiration/note.md",
     "course-aws-lambda.md~",
     "projects-mfe-micro-frontend.md~",
     "this-is-a-new-note.md",
@@ -186,14 +188,12 @@
     "projects/passport-image-thing/todo.md",
     "projects/nvim-setup/todo.md",
     "projects/food-expiration/todo.md",
-    "projects/job-searching/todo.md",
     "projects/nvim-setup",
     "projects/passport-image-thing",
     "projects/food-expiration",
     "projects/job-searching",
     "projects/rdrive",
     "in/implement a zetellkasten system for note taking",
-    "in/add git and syncthing to obsidian notes",
     "Untitled 1 57.png",
     "Untitled 81.png",
     "Untitled 2 44.png",
