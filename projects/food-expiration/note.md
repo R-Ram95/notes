@@ -28,9 +28,19 @@ contain the GTIN
         ExpirationDate,
     }
     ```
-- [ ] Backend (Express or Node)
-- [ ] Dashboard (React Web Application)
-- [ ] Scanning Tool (Mobile app => React Native? Web Based?)
+
+
+## APIs
+What functions do we need?
+-  create a new item in the catalogue
+-  delete item(s) from catalogue
+-  modify item(s) from catalogue
+-  get all item(s) from catalogue (paginated?)
+-  add item to expiration table
+-  remove item from expiration table
+-  get items that are about to expire from the exiration table
+-  get all items from the expiration table (paginated?)
+-  delete item(s) from the expiration table
 
 # Diagrams
 
